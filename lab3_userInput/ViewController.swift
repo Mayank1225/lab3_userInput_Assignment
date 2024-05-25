@@ -20,27 +20,29 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    
-    @IBAction func submitButton(_ sender: Any) {
-        labelMessage.text = ""
-        if firstName.text?.isEmpty == true || lastName.text?.isEmpty == true || countryName.text?.isEmpty == true || age.text?.isEmpty == true {
+        
+    @IBAction func submitInfo(_ sender: Any) {
+        if firstName.text?.isEmpty == true || lastName.text?.isEmpty == true   || countryName.text?.isEmpty == true || age.text?.isEmpty == true {
             labelMessage.text = "Complete the missing info \n"
         } else {
             labelMessage.text = "Successfully submitted"
         }
+        labelMessage.isHidden = false
     }
     
-    @IBAction func addButton(_ sender: Any) {
-
+    
+    @IBAction func addInfo(_ sender: Any) {
         displayDetails.text = " Full Name : \(firstName.text ?? "") \(lastName.text ?? "") \n Country : \(countryName.text ?? "") \n Age: \(age.text ?? "")"
-        labelMessage.text = ""
+        labelMessage.isHidden = true
     }
-    @IBAction func clearButton(_ sender: Any) {
+    
+    @IBAction func clearInfo(_ sender: Any) {
         displayDetails.text = ""
         firstName.text = ""
         lastName.text = ""
         countryName.text = ""
         age.text = ""
-        labelMessage.text = ""
+        labelMessage.isHidden = true
+        
     }
 }

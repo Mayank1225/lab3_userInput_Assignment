@@ -21,30 +21,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="name"/>
-                                <connections>
-                                    <action selector="firstInput:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="0Rc-2r-JF5"/>
-                                    <action selector="firstNameInput:" destination="BYZ-38-t0r" eventType="valueChanged" id="B3m-56-8gQ"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DyO-CC-r4t">
                                 <rect key="frame" x="71" y="158" width="250" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="name"/>
-                                <connections>
-                                    <action selector="lastNameInput:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="wBQ-b8-ELK"/>
-                                    <action selector="latNameInput:" destination="BYZ-38-t0r" eventType="valueChanged" id="IaD-7F-TnS"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BfN-di-GaL">
                                 <rect key="frame" x="71" y="220" width="250" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="countryInput:" destination="BYZ-38-t0r" eventType="valueChanged" id="SI7-iB-9Ed"/>
-                                    <action selector="countryNameInput:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="YUV-xm-3zW"/>
-                                </connections>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xha-ff-qxx">
                                 <rect key="frame" x="71" y="395" width="260" height="128"/>
@@ -64,7 +52,7 @@
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="addButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jfe-k2-4b5"/>
+                                    <action selector="addInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RyD-id-x2c"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFY-0F-dAH">
@@ -77,8 +65,7 @@
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="submitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pwl-Ok-e2w"/>
-                                    <action selector="submitbutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3aR-fq-Vkl"/>
+                                    <action selector="submitInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2rO-L7-lkY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHs-jf-NVk">
@@ -91,26 +78,21 @@
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="clearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pjr-ZX-J0z"/>
+                                    <action selector="clearInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="br3-tC-SSM"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hiii" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11y-Ce-PO8">
-                                <rect key="frame" x="82" y="352" width="21" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11y-Ce-PO8">
+                                <rect key="frame" x="83" y="352" width="231" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <color key="highlightedColor" systemColor="systemRedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2XY-en-fxm">
                                 <rect key="frame" x="71" y="279" width="250" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="ageInput:" destination="BYZ-38-t0r" eventType="valueChanged" id="8vf-yc-VCz"/>
-                                    <action selector="ageInput:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="9Ai-Re-Xxt"/>
-                                    <action selector="latNameInput:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="duC-Ud-xs4"/>
-                                </connections>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
