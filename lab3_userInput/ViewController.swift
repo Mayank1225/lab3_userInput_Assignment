@@ -23,9 +23,9 @@ class ViewController: UIViewController {
         
     @IBAction func submitInfo(_ sender: Any) {
         if firstName.text?.isEmpty == true || lastName.text?.isEmpty == true   || countryName.text?.isEmpty == true || age.text?.isEmpty == true {
-            labelMessage.text = "Complete the missing info \n"
+            labelMessage.text = "Complete the missing info! \n"
         } else {
-            labelMessage.text = "Successfully submitted"
+            labelMessage.text = "Successfully submitted!"
         }
         labelMessage.isHidden = false
     }
